@@ -1,0 +1,13 @@
+<h1>About Us</h1>
+<form action="/about" method="get">
+<label for="member">Please type a name </label>
+<input type="text" placeholder="Vidushani" id="member" name="member">
+<input type="submit"/>
+</form>
+
+<ol>
+  <% @members.each do |member|%>
+  <li><%= member.capitalize %></li>
+  <%end%>
+</ol>
+<p>This is the about us page.</p>
